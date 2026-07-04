@@ -501,7 +501,7 @@ function App() {
 
           {activeImage && (
             <div style={{ display: 'inline-block', textAlign: 'center', minWidth: '100%' }}>
-              <div style={{ marginBottom: '1rem', display: 'flex', gap: '0.5rem', alignItems: 'center', justifyContent: 'center', background: 'var(--panel-bg)', padding: '0.5rem', borderRadius: '8px', border: '1px solid var(--border-color)', width: 'fit-content', margin: '0 auto' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', justifyContent: 'center', background: 'var(--panel-bg)', padding: '0.5rem', borderRadius: '8px', border: '1px solid var(--border-color)', width: 'fit-content', margin: '0 auto 1rem auto' }}>
                 <button className="button" style={{ width: 'auto', margin: 0, padding: '0.25rem 0.75rem' }} onClick={() => setZoom(z => Math.max(1, z - 0.1))}>-</button>
                 <span style={{ minWidth: '4rem', textAlign: 'center', fontSize: '0.9rem' }}>{Math.round(zoom * 100)}%</span>
                 <button className="button" style={{ width: 'auto', margin: 0, padding: '0.25rem 0.75rem' }} onClick={() => setZoom(z => Math.min(5, z + 0.1))}>+</button>
