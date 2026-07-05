@@ -1,0 +1,13 @@
+{
+  "name": "localize-extractor-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Scripted Playwright recording that produces the README demo GIF",
+  "type": "module",
+  "scripts": {
+    "record": "./record-demo.sh"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
